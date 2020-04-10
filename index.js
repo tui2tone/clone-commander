@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 'use strict';
 
 const program = require('commander');
@@ -17,7 +18,11 @@ program
 
 
 const start = () => {
-    const { from, to, replace } = program;
+    const {
+        from,
+        to,
+        replace
+    } = program;
     Lib.clone(from, to, replace)
 }
 
